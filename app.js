@@ -13,9 +13,9 @@ function profitLoss(e){
     var cp = Number(currentPrice.value);
     
     var profitamount = (cp-ip)*n;
-    var profitPercentage = ((cp-ip)/ip)*100;
+    var profitPercentage = (((cp-ip)/ip)*100).toFixed(3);
     var lossamount = (ip-cp)*n;
-    var lossPercentage = ((ip-cp)/ip)*100;
+    var lossPercentage = (((ip-cp)/ip)*100).toFixed(3);
 
     
 
