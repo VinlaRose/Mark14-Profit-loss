@@ -18,8 +18,10 @@ function profitLoss(e){
     var lossPercentage = (((ip-cp)/ip)*100).toFixed(3);
 
     
-
-    if(ip<cp){
+    if(initialPrice.value === "" || noOfStocks.value === "" || currentPrice.value === ""){
+        showMsg.innerHTML = 'Enter all the fields';
+    }
+    else if(ip<cp){
         showMsg.innerHTML = `Hey, the profit is ${profitamount} and the profit percent is ${profitPercentage}%`;
     }
     else if(ip>cp){
